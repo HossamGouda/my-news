@@ -74,7 +74,7 @@ const mostReadCardFetch = async () => {
     for (let i = 0; data.length; i++) {
       if (i % 2 == 0) {
         const el = document.createElement("most-read-card");
-        el.setAttribute("text", data[i].title);
+        el.setAttribute("text", data[i]?.title || "");
         el.setAttribute("src", data[i].img_uri);
         el.setAttribute("href", data[i].link);
         el.setAttribute("excerpt", data[i].paragraph);
@@ -88,7 +88,7 @@ const mostReadCardFetch = async () => {
         document.getElementById("most-read").appendChild(el);
       } else {
         const el = document.createElement("big-most-read-card");
-        el.setAttribute("text", data[i].title);
+        el.setAttribute("text", data[i]?.title || "");
         el.setAttribute("src", data[i].img_uri);
         el.setAttribute("href", data[i].link);
         el.setAttribute(
