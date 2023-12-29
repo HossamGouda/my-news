@@ -150,8 +150,8 @@
               </div>
             </div>
             <div class="col-lg-5">
-              <div class="header-articles">
-                <a href="article.html" class="article-link">
+              <div class="header-articles" id="header-articles">
+                <!--<a href="article.html" class="article-link">
                   <div class="row">
                     <div class="col-5">
                       <img src="./images/picture-12.jpg" alt="..." />
@@ -198,7 +198,7 @@
                       </div>
                     </div>
                   </div>
-                </a>
+                </a>-->
               </div>
             </div>
           </div>
@@ -209,7 +209,8 @@
       <section class="news">
         <div class="container">
           <h2 class="section-title">الأخبار</h2>
-          <div class="row">
+          <div class="row" id="news">
+            <!--
             <div class="col-lg-3 col-md-4 col-sm-6 mt-4">
               <a href="./article.html" class="article-link">
                 <img src="./images/picture-12.jpg" alt="..." />
@@ -306,7 +307,7 @@
                 </div>
               </a>
             </div>
-          </div>
+          --></div>
           <div class="text-center mt-5">
             <a href="#" class="btn button"> المزيد </a>
           </div>
@@ -315,7 +316,8 @@
       <section class="most-read">
         <div class="container">
           <h2 class="section-title">الأكثر قراءة</h2>
-          <div class="card-news">
+          <div id="most-read"></div>
+          <!--<div class="card-news">
             <a href="./article.html">
               <div class="row">
                 <div class="col-md-5">
@@ -386,7 +388,7 @@
                 </div>
               </div>
             </a>
-          </div>
+          </div>-->
         </div>
       </section>
       <section class="opinions">
@@ -719,8 +721,27 @@
         </div>
       </div>
     </footer>
-    <script src="./js/indexPage/config.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"
+      integrity="sha512-hUhvpC5f8cgc04OZb55j0KNGh4eh7dLxd/dPSJ5VyzqDWxsayYbojWyl5Tkcgrmb/RVKCRJI1jNlRbVP4WWC4w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment-with-locales.min.js"
+      integrity="sha512-4F1cxYdMiAW98oomSLaygEwmCnIP38pb4Kx70yQYqRwLVCs3DbRumfBq82T08g/4LJ/smbFGFpmeFlQgoDccgg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/locale/ar-kw.min.js"
+      integrity="sha512-FbWEYMNShc1lJVeXDQNtpStnX336hcI3VAatMSsFZQXIV74NJseKcjrnTnl1kC9VgkORIAzgmm42P0wKTCja6w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"></script>
+    <script type="module" src="./js/indexPage/config.js"></script>
     <script src="./js/indexPage/sliderComponent.js"></script>
+    <script src="./js/indexPage/sideArticle.js"></script>
+    <script src="./js/indexPage/articleComponent.js"></script>
+    <script src="./js/indexPage/mostReadCard.js"></script>
+    <script src="./js/indexPage/bigMostReadCard.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./js/swiper.js"></script>
     <script src="js/index.js"></script>
