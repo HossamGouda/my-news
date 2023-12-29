@@ -1,0 +1,107 @@
+.search-form {
+  margin-top: 100px;
+}
+.search-form input {
+  width: 75%;
+  padding: 8px 15px;
+  border: 1px solid #B1AEAE;
+  border-radius: 5px;
+}
+.search-form .button {
+  background-color: #B80000;
+  color: #fff;
+  border: 1px solid #B80000;
+  padding: 2px 30px;
+  border-radius: 5px;
+  transition: all 0.5s;
+  text-decoration: none;
+  font-size: 22px;
+  margin-right: 25px;
+}
+.search-form .button:hover {
+  background-color: #fff;
+  color: #B80000;
+}
+.search-line {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.search-line span {
+  font-size: 20px;
+  margin-left: 10px;
+}
+.search-line select {
+  padding: 5px 15px;
+  border: 1px solid #B1AEAE;
+  border-radius: 5px;
+}
+.search-articles .article-card {
+  padding: 25px;
+  border-bottom: 1px dotted #B1AEAE;
+}
+.search-articles .article-card .article-link:hover {
+  color: #000;
+}
+.search-articles .article-card .article-link:hover h4 {
+  text-decoration: underline;
+}
+.search-articles .article-card h4 {
+  font-size: 22px;
+}
+.search-articles .article-card p {
+  font-size: 16px;
+  margin-top: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* number of lines to show */
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.search-articles .article-card time {
+  font-size: 16px;
+  color: #B1AEAE;
+}
+
+.more-resulte {
+  margin: 75px;
+}
+.more-resulte .button {
+  background-color: #B80000;
+  color: #fff;
+  border: 1px solid #B80000;
+  padding: 2px 30px;
+  border-radius: 5px;
+  transition: all 0.5s;
+  text-decoration: none;
+  font-size: 22px;
+}
+.more-resulte .button:hover {
+  background-color: #fff;
+  color: #B80000;
+}
+
+@media (max-width: 992px) {
+  .search-form input {
+    width: 60%;
+  }
+  .search-articles .article-card {
+    padding: 20px;
+  }
+  .search-articles .article-card h4 {
+    font-size: 18px;
+  }
+  .search-articles .article-card p {
+    font-size: 12px;
+    margin-top: 0;
+  }
+  .search-articles .article-card time {
+    font-size: 12px;
+  }
+  .more-resulte .button {
+    font-size: 18px;
+  }
+}
+
+/*# sourceMappingURL=search.css.map */

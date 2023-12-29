@@ -1,0 +1,115 @@
+@import './variables';
+@import './mixins';
+
+.search {
+    &-form {
+        margin-top: 100px;
+
+        input {
+            width: 75%;
+            padding: 8px 15px;
+            border: 1px solid $gray-color;
+            border-radius: 5px;
+        }
+
+        .button {
+            @include button($main-color, $white-color, $main-color);
+            font-size: 22px;
+            margin-right: 25px;
+        }
+    }
+
+    &-line {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+        span {
+            font-size: 20px;
+            margin-left: 10px;
+        }
+
+        select {
+            padding: 5px 15px;
+            border: 1px solid $gray-color;
+            border-radius: 5px;
+        }
+    }
+
+    &-articles {
+        .article-card {
+            padding: 25px;
+            border-bottom: 1px dotted $gray-color;
+
+            .article-link {
+                &:hover {
+                    color: #000;
+                    h4 {
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            p {
+                font-size: 16px;
+                margin-top: 10px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 3; /* number of lines to show */
+                        line-clamp: 3; 
+                -webkit-box-orient: vertical;
+            }
+
+            time {
+                font-size: 16px;
+                color: $gray-color;
+            }
+        }
+    }
+}
+
+.more-resulte {
+    margin: 75px;
+    .button {
+        @include button($main-color, $white-color, $main-color);
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 992px) {
+    .search {
+        &-form {
+            input {
+                width: 60%;
+            }
+        }
+
+        &-articles {
+            .article-card {
+                padding: 20px;
+                h4 {
+                    font-size: 18px;
+                }
+    
+                p {
+                    font-size: 12px;
+                    margin-top: 0;
+                }
+    
+                time {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+    .more-resulte {
+        .button {
+            font-size: 18px;
+        }
+    }
+}
