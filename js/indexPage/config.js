@@ -71,7 +71,7 @@ const mostReadCardFetch = async () => {
     const response = await fetch(`${API_URL}most-read`);
     const data = await response.json();
 
-    for (let i = 0; data.length; i++) {
+    for (let i = 0; i < data.length; i++) {
       if (i % 2 == 0) {
         const el = document.createElement("most-read-card");
         el.setAttribute("text", data[i]?.title || "");
